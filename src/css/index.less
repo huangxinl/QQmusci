@@ -1,0 +1,161 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 32px;
+	color:#fff;
+
+}
+body{
+	background-size:100% 100%;
+	background-repeat:no-repeat; 
+}
+.wrapper{
+		padding-top:140px; 
+		width: 100vw;
+		height: 100vh;
+		background-color:rgba(0,0,0,0.2); 
+		box-sizing: border-box;
+				.song-img{
+					width: 50%;
+					height: 0;
+					padding-top: 50%;
+					margin:0 auto;
+					position:relative;
+					img{
+						position:absolute;
+						left:0;
+						top:0;
+						bottom:0;
+						rihgt:0;
+						width:100%;
+						height:100%;
+					}
+				}
+		.wrapper-con{
+		    width:100%;
+		    height:246px;
+			color: #fff;
+			text-align: center;
+			margin-top: 70px;
+			.song{
+			  font-size:64px;
+			  line-hight:84px;
+			  margin-bottom:7px;
+			}
+			.author,.zhuanji{
+				font-size: 32px;
+				padding-top: 27px;
+				margin-top:5px;
+			}
+
+		}
+		.duration{
+			margin-top:20vh;
+	        height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.init,.end{
+			   width:100px;
+			   height:50px;
+			   line-height:50px;
+			   text-align:center;
+			}
+		
+			.cover{
+			    flex:1;
+				position:relative;
+				height:100%;
+				width:100%;
+				overflow:hidden;
+				.top,.bottom{
+				   width:100%;
+				   height:5px;
+				   position:absolute;
+				   top:24px;
+				}
+				.top{
+					position:relative;
+
+					width: 100%;
+					height: 5px;
+					background-color: #fff;
+					transform:translateX(-100%);
+					
+                .circle{
+						width:50px;
+						height:50px;
+						right:-32px;
+						top:-23px;
+						position:absolute;
+						display:flex;
+						align-items:center;
+						justify-content:center;
+
+						&::after{
+						    content:"";
+						    display:block;
+						    width:15px;
+						    height:15px;
+						    border-radius:50%;
+						    background-color:#fff;
+						    clear:both;
+
+						}
+					}
+				}
+				.bottom{
+				    overflow:visible;
+					width: 100%;
+					height:5px;
+					background-color:rgba(255,255,255,0.6);
+
+
+				}
+			
+
+			}
+		
+		}
+		.wrapper-foot{
+			position: absolute;
+			width: 100%;
+			height: 150px;
+		    bottom: 0; 
+		    background:rgba(0,0,0,0.2);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.one{
+				flex: 1;
+				width:70px;
+				height: 70px;
+				background-position: 50%;
+				background-repeat: no-repeat;
+
+			}
+			.like{
+				background-image: url('../images/icon-like.png');
+				&.liking{
+					background-image: url('../images/icon-like-solid.png');
+				}
+			}
+			.prev{
+				background-image: url('../images/icon-prev.png')
+			}
+			.play{
+				background-image: url('../images/icon-play.png');
+				&.pause{
+				background-image: url('../images/icon-pause.png')
+				}
+			}
+			.next{
+				background-image: url('../images/icon-next.png')
+			}
+			.list{
+				background-image: url('../images/icon-playlist.png')
+			}
+		}
+
+		
+	}

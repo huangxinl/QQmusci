@@ -1,0 +1,1 @@
+!function(n,e){function i(n){this.len=n,this.index=index}i.prototype={prev:function(){return this.requireIndex(-1)},next:function(){return this.requireIndex(1)},requireIndex:function(n){var e=this.index,i=this.len,t=(i+e+n)%i;return this.index=t}},e.controlManager=i}(window.Zepto,window.player||(window.player={}));
