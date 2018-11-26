@@ -1,2 +1,1 @@
-# mymusic
-it is  a qqmusic
+# QQmusci
